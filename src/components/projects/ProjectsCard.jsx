@@ -13,7 +13,6 @@ const ProjectsCard = ({ image, subTitle, title, link }) => {
                 src={image}
                 alt={title}
               />
-              {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300"></div> */}
             </div>
           </div>
           <div className="p-[32px]">
@@ -27,14 +26,10 @@ const ProjectsCard = ({ image, subTitle, title, link }) => {
                 </h3>
               </div>
             </div>
-            <a
-              href={link}
-              target="_blank"
-              className="flex cursor-pointer hover-underline-animation_blog gap-3 text-[18px]  items-center font-normal transition duration-300 dark:text-[#fff] group-hover:text-[#00000099] text-[#000] dark:group-hover:text-[#d3d3d3]"
-            >
+            <div className="flex cursor-pointer hover-underline-animation_blog gap-3 text-[18px]  items-center font-normal transition duration-300 dark:text-[#fff] group-hover:text-[#00000099] text-[#000] dark:group-hover:text-[#d3d3d3]">
               View Project
               <IoMdArrowForward />
-            </a>
+            </div>
           </div>
         </div>
       </a>

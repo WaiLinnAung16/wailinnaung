@@ -43,7 +43,7 @@ const Home = () => {
       <main className=" relative dark:bg-[#150112] dark:text-white">
         <ThemeBtn darkMode={darkMode} themeSwitch={themeSwitch} />
         <section className="">
-          <Hero />
+          <Hero darkMode={darkMode} />
         </section>
 
         <section className=" py-[80px]">

@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   Aos.init();
@@ -40,23 +41,24 @@ const Footer = () => {
               href="mailto:waia00198@gmail.com"
               className=" flex items-center gap-2 "
             >
-              <img
-                src="https://assets.website-files.com/5fef5619b640934b33c2385e/60792c7df85964dafaa3825d_Vector.svg"
-                alt=""
-              />
+              <IoMdMail className=" text-[25px]" />
+
               <div className=" font-[700]">waia00198@gmail.com</div>
             </a>
           </div>
 
-          <div className=" grid grid-cols-2 md:grid-cols-4 gap-10 text-btn">
+          <div className=" grid grid-cols-2 md:grid-cols-3 gap-10 text-btn">
+            <a href="#home" className=" relative w-fit footer-link">
+              Home
+            </a>
             <a href="#about" className=" relative w-fit footer-link">
               About
             </a>
-            <a href="#contact" className=" relative w-fit footer-link">
-              Contact
-            </a>
             <a href="#projects" className=" relative w-fit footer-link">
               Projects
+            </a>
+            <a href="#contact" className=" relative w-fit footer-link">
+              Contact
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=100031937234961"

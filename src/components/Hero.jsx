@@ -6,9 +6,13 @@ import figma from "../assets/figma.svg";
 import html from "../assets/html.svg";
 import reactLogo from "../assets/reactLogo.svg";
 import github from "../assets/github.svg";
+import figmaLight from "../assets/figmaLight.svg";
+import htmlLight from "../assets/htmlLight.svg";
+import reactLight from "../assets/reactLight.svg";
+import githubLight from "../assets/githubLight.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   Aos.init();
 
   return (
@@ -17,13 +21,13 @@ const Hero = () => {
       className="max-w-[1215px] min-h-[800px] pt-[130px] lg:pt-0 mx-auto flex justify-center items-center px-5"
     >
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-5 ">
-        <div className="">
+        <div className="mt-5 lg:mt-0">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-delay="100"
-            className="text-title_sm md:text-title xl:text-hero_title font-[700] tracking-tighter mb-8 "
+            className="text-[32px] md:text-title_sm xl:text-hero_title font-[700] tracking-tighter mb-5 lg:mb-8"
           >
             <span className="text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500">
               Creating websites
@@ -46,7 +50,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-delay="300"
-            className="flex flex-col md:flex-row items-start md:items-center gap-5 ps-2"
+            className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-5 ps-2"
           >
             <Button text={"Book a call"} />
             <div className="group flex items-center gap-3 font-[700] cursor-pointer">
@@ -68,22 +72,45 @@ const Hero = () => {
               alt=""
               className=" object-center rounded-md h-[350px] lg:h-[500px] shadow-lg"
             />
-            <img
-              src={figma}
-              className="absolute -top-3 right-10 w-16 h-16 shadow-xl"
-            />
-            <img
-              src={html}
-              className="absolute bottom-8 right-10 w-20 h-20 shadow-xl"
-            />
-            <img
-              src={reactLogo}
-              className="absolute top-10 left-8 w-20 h-20 shadow-xl"
-            />
-            <img
-              src={github}
-              className="absolute bottom-0 left-6 w-16 h-16  shadow-xl"
-            />
+            {darkMode ? (
+              <>
+                <img
+                  src={figma}
+                  className="absolute -right-6 top-3 lg:right-0 xl:-top-3 xl:right-10 w-16 h-16 shadow-xl"
+                />
+                <img
+                  src={html}
+                  className="absolute bottom-0 -right-5 w-16 h-16  lg:-bottom-3  lg:right-0 xl:bottom-8 xl:right-10 lg:w-20 lg:h-20 shadow-xl"
+                />
+                <img
+                  src={reactLogo}
+                  className="absolute w-16 h-16 top-4 -left-5 xl:top-10 xl:left-8 lg:w-20 lg:h-20 shadow-xl"
+                />
+                <img
+                  src={github}
+                  className="absolute -left-6 -bottom-3 lg:bottom-6 lg:left-0 xl:bottom-0 xl:left-6 w-16 h-16  shadow-xl"
+                />
+              </>
+            ) : (
+              <>
+                <img
+                  src={figmaLight}
+                  className="absolute -right-6 top-3 lg:right-0 xl:-top-3 xl:right-10 w-16 h-16 shadow-xl"
+                />
+                <img
+                  src={htmlLight}
+                  className="absolute bottom-0 -right-5 w-16 h-16  lg:-bottom-3  lg:right-0 xl:bottom-8 xl:right-10 lg:w-20 lg:h-20 shadow-xl"
+                />
+                <img
+                  src={reactLight}
+                  className="absolute w-16 h-16 top-4 -left-5 xl:top-10 xl:left-8 lg:w-20 lg:h-20 shadow-xl"
+                />
+                <img
+                  src={githubLight}
+                  className="absolute -left-6 -bottom-3 lg:bottom-6 lg:left-0 xl:bottom-0 xl:left-6 w-16 h-16  shadow-xl"
+                />
+              </>
+            )}
           </div>
         </div>
       </div>

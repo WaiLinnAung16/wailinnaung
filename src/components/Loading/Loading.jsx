@@ -5,8 +5,12 @@ const Loading = () => {
   return (
     <div className=" flex justify-center items-center h-screen bg-white">
       <div className="h-20  overflow-hidden flex items-baseline page">
-        {words.map((w) => {
-          return <h1 className="text">{w}</h1>;
+        {words.map((w, i) => {
+          return (
+            <h1 key={i} className="text">
+              {w}
+            </h1>
+          );
         })}
       </div>
     </div>

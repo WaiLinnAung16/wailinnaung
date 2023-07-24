@@ -37,11 +37,11 @@ const Contact = () => {
               >
                 <div className=" flex items-center gap-2">
                   <IoMdMail className=" text-[25px]" />
-                  <div class="">waia00198.com</div>
+                  <p>waia00198@gmail.com</p>
                 </div>
                 <div className=" flex items-center gap-2">
                   <BsTelephoneFill />
-                  <div class="">+959-790-658-104</div>
+                  <p>+959-790-658-104</p>
                 </div>
               </div>
             </div>
