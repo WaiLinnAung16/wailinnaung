@@ -64,7 +64,6 @@ const Hero = ({ darkMode }) => {
           data-aos-duration="1000"
           data-aos-once="true"
           data-aos-delay="100"
-          className=""
         >
           <div className="flex justify-center items-center lg:w-[400px] xl:w-[500px]">
             <img

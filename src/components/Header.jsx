@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import ThemeBtn from "./Theme/ThemeBtn";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-
+import logo from "/logo1.svg";
 const Header = ({ darkMode, themeSwitch }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
@@ -42,9 +42,7 @@ const Header = ({ darkMode, themeSwitch }) => {
           className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white dark:bg-[#150112] dark:text-white`}
         >
           <div>
-            <h1 className=" text-black dark:text-white text-[25px] font-[700]">
-              My Portfolio<span className=" text-red-400">.</span>
-            </h1>
+            <img src={logo} alt="" className=" w-[68px] h-[68px]" />
           </div>
           <div className=" max-lg:hidden">
             <ul className="nav-link flex items-center gap-10">
@@ -58,16 +56,6 @@ const Header = ({ darkMode, themeSwitch }) => {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="about"
-                  activeClass="active"
-                  spy={true}
-                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
-                >
-                  About
-                </Link>
-              </li>
 
               <li>
                 <Link
@@ -77,6 +65,16 @@ const Header = ({ darkMode, themeSwitch }) => {
                   className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
                 >
                   Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
+                  About
                 </Link>
               </li>
               <li>
@@ -140,17 +138,6 @@ const Header = ({ darkMode, themeSwitch }) => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                to="about"
-                activeClass="active"
-                spy={true}
-                onClick={() => setMenuOpen(!menuOpen)}
-                className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
-              >
-                About
-              </Link>
-            </li>
 
             <li>
               <Link
@@ -161,6 +148,17 @@ const Header = ({ darkMode, themeSwitch }) => {
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="about"
+                activeClass="active"
+                spy={true}
+                onClick={() => setMenuOpen(!menuOpen)}
+                className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+              >
+                About
               </Link>
             </li>
             <li>
