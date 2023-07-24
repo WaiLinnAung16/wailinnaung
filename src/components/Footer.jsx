@@ -30,13 +30,7 @@ const Footer = () => {
           data-aos-once="true"
           className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20"
         >
-          <div className=" text-sm text-gray-300 space-y-3">
-            {/* <a href="#">
-              <img src={logo} alt="" className=" w-[68px] h-[68px]" />
-              <h1 className=" text-white dark:text-black text-[25px] font-[700]">
-                My Portfolio<span className=" text-red-400">.</span>
-              </h1>
-            </a> */}
+          <div className=" text-sm text-gray-200 dark:text-gray-800 space-y-3">
             <p>No 271, Thamine Myothit 7 street, Mayangone, Yangon</p>
             <a
               href="mailto:waia00198@gmail.com"
