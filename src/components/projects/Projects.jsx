@@ -41,7 +41,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1215px] px-5 pt-[65px] mx-auto grid grid-cols-12 lg:grid-cols-none lg:grid-rows-6 lg:grid-flow-col gap-5">
+      <div className="max-w-[1215px] px-5 pt-[65px] mx-auto grid grid-cols-12 lg:grid-cols-none lg:grid-rows-6 lg:grid-flow-col gap-5 select-none">
         <div className="col-span-12 md:col-span-6 lg:row-span-4 lg:col-span-3">
           <div className="h-full overflow-hidden relative rounded shadow group">
             <div className="h-full overflow-hidden relative rounded shadow group">
@@ -64,7 +64,7 @@ const Projects = () => {
                   <a
                     href="https://contactdashboard.vercel.app/login"
                     target="_blank"
-                    className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                    className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                   >
                     <MdRemoveRedEye />
                     Live Demo
@@ -99,7 +99,7 @@ const Projects = () => {
                 <a
                   href="https://where-in-the-world-1.vercel.app/"
                   target="_blank"
-                  className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                  className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                 >
                   <MdRemoveRedEye />
                   Live Demo
@@ -133,7 +133,7 @@ const Projects = () => {
                 <a
                   href="https://hotale.vercel.app/"
                   target="_blank"
-                  className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                  className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                 >
                   <MdRemoveRedEye />
                   Live Demo
@@ -172,7 +172,7 @@ const Projects = () => {
                 <a
                   href="https://hotale-dashboard.vercel.app/login"
                   target="_blank"
-                  className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                  className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                 >
                   <MdRemoveRedEye />
                   Live Demo
@@ -204,7 +204,7 @@ const Projects = () => {
                 <a
                   href="https://movie-zine.vercel.app/"
                   target="_blank"
-                  className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                  className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                 >
                   <MdRemoveRedEye />
                   Live Demo
@@ -238,7 +238,7 @@ const Projects = () => {
                 <a
                   href="https://seafood-paradise.vercel.app/"
                   target="_blank"
-                  className=" text-slate-200 font-semibold text-base flex items-center gap-3 relative border-btn"
+                  className=" text-white font-semibold text-base flex items-center gap-3 relative border-btn"
                 >
                   <MdRemoveRedEye />
                   Live Demo

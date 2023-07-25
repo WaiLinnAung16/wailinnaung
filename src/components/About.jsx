@@ -1,12 +1,27 @@
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import contact2 from "../assets/about/contact2.jpg";
-import contact from "../assets/about/contact.jpg";
-import hotale from "../assets/about/hotale.jpg";
-import hotale2 from "../assets/about/hotale2.jpg";
+import htmlLight from "../assets/htmlLight.svg";
+import cssLight from "../assets/cssLight.svg";
+import jsLight from "../assets/jsLight.svg";
+import reactLight from "../assets/reactLight.svg";
+import bootstrapLight from "../assets/bootstrapLight.svg";
+import tailwindLight from "../assets/tailwindLight.svg";
+import figmaLight from "../assets/figmaLight.svg";
+import psLight from "../assets/psLight.svg";
+import aiLight from "../assets/aiLight.svg";
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
+import js from "../assets/js.svg";
+import reactLogo from "../assets/reactLogo.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import tailwind from "../assets/tailwind.svg";
+import figma from "../assets/figma.svg";
+import ps from "../assets/ps.svg";
+import ai from "../assets/ai.svg";
+import Timeline from "./Timeline/Timeline";
 
-const About = () => {
+const About = ({ darkMode }) => {
   Aos.init();
 
   return (
@@ -16,9 +31,9 @@ const About = () => {
         data-aos-duration="1000"
         data-aos-once="true"
         data-aos-delay="300"
-        className="flex flex-wrap justify-between mb-[90px]"
+        className="flex flex-wrap justify-between mb-5 md:mb-20"
       >
-        <div className="w-full mb-5 md:m-0 md:w-[45%]">
+        <div className="w-full md:w-[45%]">
           <h3 className="uppercase text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500 text-base font-[600] tracking-wider my-2">
             frontend developer
           </h3>
@@ -34,32 +49,201 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      {/* gallery */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-[90px]">
-        <div className="">
-          <img
-            className="h-[300px] md:h-[500px] w-full object-cover object-right-bottom"
-            src={contact2}
-          />
-        </div>
-        <div className="col-span-1 lg:col-span-2 ">
-          <img
-            className="h-[300px] md:h-[500px] w-full object-cover"
-            src={contact}
-          />
-        </div>
-        <div className=" flex justify-between lg:flex lg:flex-col">
-          <img
-            className="h-auto md:h-[250px] w-[48%] md:w-full object-cover"
-            src={hotale2}
-          />
-          <img
-            className="h-auto md:h-[250px] w-[48%] md:w-full object-cover"
-            src={hotale}
-          />
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="300"
+        className="w-full flex flex-wrap justify-between"
+      >
+        <h1 className="text-[54px] dark:text-white text-black font-[700] w-full md:w-[30%]">
+          Skills I have
+        </h1>
+        <div className="flex items-center flex-wrap gap-5 w-full mt-5 md:m-0 md:w-[55%]">
+          {darkMode ? (
+            <>
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="400"
+                src={html}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="500"
+                src={css}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="600"
+                src={js}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="700"
+                src={reactLogo}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="800"
+                src={bootstrap}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="900"
+                src={tailwind}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1000"
+                src={figma}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1100"
+                src={ps}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1200"
+                src={ai}
+                alt=""
+                className=" w-20 h-20"
+              />
+            </>
+          ) : (
+            <>
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="400"
+                src={htmlLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="500"
+                src={cssLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="600"
+                src={jsLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="700"
+                src={reactLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="800"
+                src={bootstrapLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="900"
+                src={tailwindLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1000"
+                src={figmaLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1100"
+                src={psLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="1200"
+                src={aiLight}
+                alt=""
+                className=" w-20 h-20"
+              />
+            </>
+          )}
         </div>
       </div>
+      {/* <div
+        className="flex flex-col md:flex-row gap-5 mt-20"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="300"
+      >
+        <h1 className="text-[54px] dark:text-white text-black font-[700]">
+          Experiences
+        </h1>
+
+        <Timeline />
+      </div> */}
     </div>
   );
 };

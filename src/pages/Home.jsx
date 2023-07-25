@@ -45,15 +45,14 @@ const Home = () => {
         <section className="">
           <Hero darkMode={darkMode} />
         </section>
-
+        <section className=" py-[80px]">
+          <About darkMode={darkMode} />
+        </section>
         <section className=" py-[80px]">
           <Projects />
         </section>
-        <section className=" py-[80px]">
-          <About />
-        </section>
 
-        <section className=" py-[80px] pb-[160px]">
+        <section className=" py-[80px]">
           <Contact />
         </section>
       </main>

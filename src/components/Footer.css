@@ -13,7 +13,7 @@
     #ffa84b
   );
 
-  transition: all 0.7s ease-out;
+  transition: all 0.3s ease-out;
 }
 .footer-cta:hover::before {
   border-radius: 2px;
@@ -24,9 +24,9 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px;
   width: 0;
-  height: 0.5px;
+  height: 1.2px;
   background-color: white;
 
   transition: all 0.3s ease-out;

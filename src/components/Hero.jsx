@@ -74,18 +74,34 @@ const Hero = ({ darkMode }) => {
             {darkMode ? (
               <>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="500"
                   src={figma}
                   className="absolute -right-6 top-3 lg:right-0 xl:-top-3 xl:right-10 w-16 h-16 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="600"
                   src={html}
                   className="absolute bottom-0 -right-5 w-16 h-16  lg:-bottom-3  lg:right-0 xl:bottom-8 xl:right-10 lg:w-20 lg:h-20 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="500"
                   src={reactLogo}
                   className="absolute w-16 h-16 top-4 -left-5 xl:top-10 xl:left-8 lg:w-20 lg:h-20 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="500"
                   src={github}
                   className="absolute -left-6 -bottom-3 lg:bottom-6 lg:left-0 xl:bottom-0 xl:left-6 w-16 h-16  shadow-xl"
                 />
@@ -93,18 +109,34 @@ const Hero = ({ darkMode }) => {
             ) : (
               <>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="500"
                   src={figmaLight}
                   className="absolute -right-6 top-3 lg:right-0 xl:-top-3 xl:right-10 w-16 h-16 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="600"
                   src={htmlLight}
                   className="absolute bottom-0 -right-5 w-16 h-16  lg:-bottom-3  lg:right-0 xl:bottom-8 xl:right-10 lg:w-20 lg:h-20 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="500"
                   src={reactLight}
                   className="absolute w-16 h-16 top-4 -left-5 xl:top-10 xl:left-8 lg:w-20 lg:h-20 shadow-xl"
                 />
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  data-aos-delay="700"
                   src={githubLight}
                   className="absolute -left-6 -bottom-3 lg:bottom-6 lg:left-0 xl:bottom-0 xl:left-6 w-16 h-16  shadow-xl"
                 />

@@ -56,17 +56,6 @@ const Header = ({ darkMode, themeSwitch }) => {
                   Home
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  to="projects"
-                  activeClass="active"
-                  spy={true}
-                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
-                >
-                  Projects
-                </Link>
-              </li>
               <li>
                 <Link
                   to="about"
@@ -77,6 +66,17 @@ const Header = ({ darkMode, themeSwitch }) => {
                   About
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="projects"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
+                  Projects
+                </Link>
+              </li>
+
               <li>
                 <Link
                   to="contact"
@@ -141,17 +141,6 @@ const Header = ({ darkMode, themeSwitch }) => {
 
             <li>
               <Link
-                to="projects"
-                activeClass="active"
-                spy={true}
-                onClick={() => setMenuOpen(!menuOpen)}
-                className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="about"
                 activeClass="active"
                 spy={true}
@@ -159,6 +148,17 @@ const Header = ({ darkMode, themeSwitch }) => {
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects"
+                activeClass="active"
+                spy={true}
+                onClick={() => setMenuOpen(!menuOpen)}
+                className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+              >
+                Projects
               </Link>
             </li>
             <li>
