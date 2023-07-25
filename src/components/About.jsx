@@ -58,7 +58,7 @@ const About = ({ darkMode }) => {
         <h1 className="text-[54px] dark:text-white text-black font-[700] w-full md:w-[30%]">
           Skills I have
         </h1>
-        <div className="flex items-center flex-wrap gap-5 w-full mt-5 md:m-0 md:w-[55%]">
+        <div className="flex justify-center lg:justify-start flex-wrap gap-5 w-full mt-5 md:m-0 md:w-[55%]">
           {darkMode ? (
             <>
               <img
