@@ -19,7 +19,6 @@ import tailwind from "../assets/tailwind.svg";
 import figma from "../assets/figma.svg";
 import ps from "../assets/ps.svg";
 import ai from "../assets/ai.svg";
-import Timeline from "./Timeline/Timeline";
 
 const About = ({ darkMode }) => {
   Aos.init();
