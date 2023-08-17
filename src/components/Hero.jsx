@@ -10,8 +10,10 @@ import figmaLight from "../assets/figmaLight.svg";
 import htmlLight from "../assets/htmlLight.svg";
 import reactLight from "../assets/reactLight.svg";
 import githubLight from "../assets/githubLight.svg";
+import cv from "../assets/WaiLinnAung.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 const Hero = ({ darkMode }) => {
   Aos.init();
 
@@ -52,9 +54,18 @@ const Hero = ({ darkMode }) => {
             data-aos-delay="300"
             className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-5 ps-2"
           >
-            <Button text={"Book a call"} />
+            <div className=" relative select-none">
+              <Link to="contact">
+                <div className="z-10 bg-black dark:bg-white dark:text-black text-white px-5 py-3 text-[18px] font-bold relative -translate-x-2 -translate-y-2 transition-transform duration-500 hover:translate-x-0 hover:translate-y-0">
+                  Book a call
+                </div>
+              </Link>
+              <span className=" after:block after:absolute after:-inset-0 after:bg-gradient-to-r after:from-purple-600 after:via-red-500 after:to-yellow-500"></span>
+            </div>
             <div className="group flex items-center gap-3 font-[700] cursor-pointer">
-              <p>Download CV </p>{" "}
+              <a href={cv} download>
+                Download CV{" "}
+              </a>{" "}
               <FiArrowRight className="group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
             </div>
           </div>
