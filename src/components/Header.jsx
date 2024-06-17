@@ -29,7 +29,7 @@ const Header = ({ darkMode, themeSwitch }) => {
   };
 
   window.addEventListener("scroll", handleShowNav);
-  // console.log("last scroll",lastScroll, "current scroll", window.scrollY);
+  // console.log("last scroll", lastScroll, "current scroll", window.scrollY);
 
   return (
     <>
